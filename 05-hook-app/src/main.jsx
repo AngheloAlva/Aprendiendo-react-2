@@ -11,19 +11,12 @@ import './index.css'
 // import FocusScreen from './03-useRef/FocusScreen'
 // import Memorize from './04-memo/Memorize'
 // import CallbackHook from './04-memo/CallbackHook'
-import { Padre } from './05-tarea-memo/Padre'
+// import { Padre } from './05-tarea-memo/Padre'
+// import './06-useReducer/intro-reducer'
+import TodoApp from './06-useReducer/TodoApp'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <HooksApp /> */}
-    {/* <CounterApp /> */}
-    {/* <CounterWithCustomHookl /> */}
-    {/* <SimpleForm /> */}
-    {/* <FormWhitCustomHook /> */}
-    {/* <FocusScreen /> */}
-    {/* <Memorize /> */}
-    {/* <MemoHook /> */}
-    {/* <CallbackHook /> */}
-    <Padre />
+    <TodoApp />
   </React.StrictMode>
 )

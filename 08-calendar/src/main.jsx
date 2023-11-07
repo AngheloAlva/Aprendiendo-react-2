@@ -4,11 +4,18 @@ import CalendarApp from './CalendarApp.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import LoginPage from './auth/pages/LoginPage.jsx'
+import Navbar from './calendar/components/Navbar.jsx'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <CalendarApp />
+    element: <Navbar />,
+    children: [
+      {
+        path: '/',
+        element: <CalendarApp />
+      }
+    ]
   },
   {
     path: '/login',
